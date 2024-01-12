@@ -6,31 +6,47 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     body {
-      padding-top: 56px; /* Adjusted for the fixed navbar height */
+      padding-top: 50px; /* Adjusted for the fixed navbar height */
     }
     section {
-      height: 800px; /* Adjust the height based on your content */
       padding: 20px;
     }
-   
-    article {
-      display: flex;
-      justify-content: space-between;
-      align-items: right;
-      padding-right: 25%;
-      padding-left: 10%;
+    .p{
+      padding: 10px;
     }
-    .content {
-      text-align:justify;
+    .Face {
+      width: 350px;
+      height: 350px;
+      margin: 5px;
+      float:left;
+      border: 5px solid rgb(121, 88, 153);
+      
     }
+
+    .article1{
+      padding-left: 15%;
+      padding-right: 15% ;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .article2{
+      padding-left: 12%;
+      padding-right: 12% ;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    
     .portrait {
       width: 200px; /* Adjust the width based on your needs */
       height: auto;
       padding: 10px;
     }
+    
     .fir_list{ display:inline-block;
-             width:49%;
+      width:49%;
     }
+    
   </style>
   <title>Mthokozeleni Sithole</title>
 </head>
@@ -56,55 +72,74 @@
         <a class="nav-link" href="#tech-stack">Tech Stack</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-outline-light text-white" href="#">Resume</a>
+        <a class="btn btn-outline-light text-white" href="index.html">Resume</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <section id="about" class="bg-dark text-white">
-  <article>
-    <div class="content">
-      <h2>About Me</h2>
+  <article class="article1">
+    
+      <div>
+        <h2>About Me</h2>
+      </div>
+
+      <figure >
+        <img src="facegrad.jpg" alt="Portrait" class="Face">
+      </figure>
+      
+    <div style="text-align: left;">
+      <p >
+        I possess a diverse set of skills ranging from software development, business analysis, fieldwork experience in data collection and event organisation.
+      I hold a BSc in Computer Science and Business Computing from the University of Cape Town.
+      Where I participated in academic and personal projects in software development such as the District Six AR, a mobile development project and a web application which have been used in research projects and are being further improved.
+      </p>
       <p>
-        A design-thinker Computer Science graduate from the University of Cape Town. 
-        Boasts with problem-solving, adaptability skills, and strong Java, SAP ABAP coding background.
-        Familiar with Scrum processes, SQL data management, Android SDK, GIT version control, and SAP S4HANA.
-        Seeking to join a vibrant team of developers to apply and enhance current programming and 
-        project management skills. 
+        I have also participated in Business analysis projects where we analysed and improved business processes and bridged the gap between business needs and technical solutions for UCT Finance operations debtors office and the Information Systems department.
+        In my undertaking of these projects I have experienced various IT project management styles such Agile/Scrum for software development and applying design thinking in solving business challenges.
+      </p>
+      <p>
+        My personal work experiences at Citizen Surveys and Stats Sa Census22  exposed me to practical project fieldwork experience in data collection and analysis, administrative work and fieldwork supervision and experience at Bluenote Soundz  an entrepreneurial venture exposed me to event organisation,field and social media marketing and promotion.
+        The intersection of my diverse skills and experiences I believe puts me in an advantageous  position as I kickstart my career in tech.
+      </p>
+      <p>
+        I have technical and analytical skills required to pursue Software Development (Mobile, Web and Database Development, Software testing),  Business Analysis, IT Technical Support  and I have the organisational and interpersonal skills for IT and non-IT Project Management , Project administration and Fieldwork Coordination/Supervision.
+        My goal is for an entry role or an internship in any of these fields, which I will then dedicate myself to learning and growing in that field with an organisation that aligns with my vision. 
       </p>
     </div>
-    <div>
-      <img src="facegrad.jpg" alt="Portrait" class="portrait">
-    </div>
+    
   </article>
 </section>
 
 <section id="projects" class="bg-dark text-white">
   
   <!-- Add your content for the Projects section -->
-  <article>
-  
-      <div class="content">
-        <h2>Projects</h2>
-        <li style="list-style-type:square;"><b>Project: </b>District Six AR </li>
-        <p>The project is an android app written in Java on Android Studio that guides users touring sites of interest at District Six.The app provides a map and
-          navigation capabilities throgh the tour and once the user arrives at a site they can access information about the it in a form of images, video and text.
-          The aim of the tour is to educate users about the District Six removals by the Apartheid government.<a href="https://drive.google.com/file/d/1nxC0dBo7X_j_qB1b8Y_6MpRUVb0_sktC/view?usp=sharing"> link to project report</a>
-        </p>
-        <p>I was responsible for choosing and intergrating the navigation API for navigation features and the feedback and Usage data collection feature which stored the data on firebase.
-          The project was a hybrid scrum lead and involved remote (MS Teams and Zoom) and in person update meetings and code sprints.
-        </p>
-        <li style="list-style-type:square;"><b>Tech stack: </b>Java, Android Studio, Esri ArcGIS, Firebase, GITLAB </li>
-      </div>
-      <!--Woulb be nice to add a slide view of multiple screenshoots-->
+  <article class="article2">
+    <h2>Projects</h2>
+    <!--Woulb be nice to add a slide view of multiple screenshoots (light house)-->
+    <figure>
       <div>
         <img src="District 6.jpg" alt="Portrait" class="portrait">
       </div>
+    </figure>
+        
+      <li style="list-style-type:square;"><b>Project: </b>District Six AR </li>
+      <p>The project is an android app written in Java on Android Studio that guides users touring sites of interest at District Six.The app provides a map and
+          navigation capabilities throgh the tour and once the user arrives at a site they can access information about the it in a form of images, video and text.
+          The aim of the tour is to educate users about the District Six removals by the Apartheid government.<a href="https://drive.google.com/file/d/1nxC0dBo7X_j_qB1b8Y_6MpRUVb0_sktC/view?usp=sharing"> link to project report</a>
+      </p>
+      <p>I was responsible for choosing and intergrating the navigation API for navigation features and the feedback and Usage data collection feature which stored the data on firebase.
+          The project was a hybrid scrum lead and involved remote (MS Teams and Zoom) and in person update meetings and code sprints.
+      </p>
+      <li style="list-style-type:square;"><b>Tech stack: </b>Java, Android Studio, Esri ArcGIS, Firebase, GITLAB </li>
+      
+      
+      
    
   </article>
 
-  <article>
+  <article class="article2">
     <div class="content">
       <li style="list-style-type:square;"><b>Project: </b>Truth Tables for proporsitional logic </li>
       <p>A website that provides a user interface that allows a user to type in sentences of proporsitional logic.
@@ -120,7 +155,7 @@
     </div>
   </article>
 
-  <article>
+  <article class="article2">
     <div class="content">
       <li style="list-style-type:square;"><b>Project: </b>Business Process Redesign: Non Research Sales Invoicing </li>
       <p>abstract of the project<a href="https://drive.google.com/file/d/1SAAU2dAWXkqJ38fb_SX-6Xyqga2T7t_z/view?usp=sharing"> project report link.</a></p>
@@ -170,7 +205,20 @@
   <article>
     <div class="content">
         <ol style="list-style-type:circle; line-height:1.5;">
-        <li> <h4>QUALITY ASSURER,TRANSCRIBER, FIELDWORK SUPERVISOR</h4></li>
+        <li> <h4>CO FOUNDER & CHIEF OPERATIONS OFFICER</h4></li>
+        <li><b>Company:</b> Bluenote Soundz</li>
+        <li><b>Duration:</b> June 2018 - November 2022</li>
+        <P>
+          I oversaw operations of Bluenote Soundz, a startup that lends sound equipment and organises small and medium events, such as talk, banquets, award ceremonies and residence house parties for UCT student societies and residences. My main responsibility is to ensure that we deliver the best of our services as required by the client whilst minimising costs to the company.<a href="https://www.instagram.com/bluenotesoundz/"> Blunote Soundz Instagram</a>
+        </P>
+      </ol>
+    </div>
+  </article>
+
+  <article>
+    <div class="content">
+        <ol style="list-style-type:circle; line-height:1.5;">
+        <li> <h4>DATA COLLECTING, TRANSCRIBER, FIELDWORK SUPERVISOR</h4></li>
         <li><b>Employer:</b> Citizen Surveys</li>
         <li><b>Project:</b> Domestic Tourism Survey, City of Cape Town Perception and Satifaction Survey, General Household Survey etc... </li>
         <li><b>Duration:</b> June 2017 - March 2019</li>
