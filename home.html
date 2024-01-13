@@ -46,7 +46,30 @@
     .fir_list{ display:inline-block;
       width:49%;
     }
-    
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .image-column {
+      flex: 1;
+      max-width: calc(14.2857% - 10px); /* 100% / 7 columns with 10px spacing */
+      margin-bottom: 10px;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+    }
+    @media screen and (max-width: 768px) {
+      .image-column {
+        max-width: calc(33.3333% - 10px); /* 100% / 3 columns with 10px spacing */
+      }
+    }
+  
   </style>
   <title>Mthokozeleni Sithole</title>
 </head>
@@ -118,11 +141,22 @@
   <article class="article2">
     <h2>Projects</h2>
     <!--Woulb be nice to add a slide view of multiple screenshoots (light house)-->
-    <figure>
-      <div>
-        <img src="District 6.jpg" alt="Portrait" class="portrait">
+  
+   
+
+    <div class="image-row" style="display: flex; justify-content: space-between;">
+    
+      <div class="image-column" style="flex: 1;">
+        <img src="District_Six_screenshots\2District 6.jpg" onclick="openModal();currentSlide(1)" alt="Image 2" width="200">
       </div>
-    </figure>
+    
+      <div class="image-column" style="flex: 1;">
+        <img src="District_Six_screenshots\7_District 6.jpg" onclick="openModal();currentSlide(1)" alt="Image 3" width="200">
+      </div>
+    
+      
+    
+    </div>
         
       <li style="list-style-type:square;"><b>Project: </b>District Six AR </li>
       <p>The project is an android app written in Java on Android Studio that guides users touring sites of interest at District Six.The app provides a map and
